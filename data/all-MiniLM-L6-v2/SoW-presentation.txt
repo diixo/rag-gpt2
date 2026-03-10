@@ -1,0 +1,35 @@
+
+1. Assistant Auditor (role, ???)
+
+2. Assistant ProjectManager (role, LLM fine-tuned for reasoning, support the smart dialogue)
+
+3. Assistant Developer (role, LLM fine-tuned for reasoning, support the smart dialogue)
+
+4. Assistant Information (files indexing, smart-search on RAG)
+
+--------------------------------------------------------------------------------------------
+
+Scope of Work:
+
+1. Research on already existed datasets
+
+1. Create own Dataset:
+  Implement generator for synthetic data for own dataset. 
+  Goals: 
+  * cover maximal density and data entropy to cover multi-turns of dialogues 
+  * support reasoning dialogues (follow focus of conversation)
+
+2. research to Configure LLM:
+   Goals: 
+   * select optimal architecture of LLM
+   * create optimal configuration (amount of layers, sizes of layers etc)
+   Output is datasets of two types:
+   1) Dataset for logic tracking and understanding
+   2) Dataset for QAs (phormal type answers, humoristic-type answers etc...)
+
+3. Training process:
+   Create pipeline for:
+   * training of dialogues (answer-question correctness) 
+   * training of reasoning (tracking the logic, etc...)
+
+4. Create web-system (UI front-end + back-end) to interract User with Model (Python+Django)
